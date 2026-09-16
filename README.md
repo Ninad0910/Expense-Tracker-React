@@ -1,16 +1,59 @@
-# React + Vite
+# Expense Tracker React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React expense tracking application built to practice core React concepts including state management, routing, reusable components and persistent browser storage.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://expense-tracker-react-fundamentals.netlify.app/
 
-## React Compiler
+## GitHub
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+https://github.com/Ninad0910/Expense-Tracker-React
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Add income and expenses
+- Edit existing transactions
+- Delete transactions
+- Delete confirmation modal
+- Category-based filtering
+- Amount-range filtering
+- Sorting
+- Expense and income summaries
+- Statistics dashboard
+- Summary bar
+- Dark mode
+- Persistent data using localStorage
+- Custom localStorage hook
+- React Router navigation
+- Lazy-loaded routes with Suspense
+- React Portals for modal rendering
+- Responsive interface
+
+## Tech Stack
+
+- React
+- React Router
+- Context API
+- Tailwind CSS
+- JavaScript
+- localStorage
+
+## Project Structure
+
+The application is divided into reusable React components and uses React Context for shared expense-related state.
+
+Routing is handled using React Router, while browser localStorage is used to persist application data between sessions.
+
+## State Management
+
+The application uses the React Context API to share expense-related data across components without passing the same state through multiple levels of props.
+
+A custom localStorage hook is used to save and restore application data from the browser.
+
+## Run Locally
+
+Install dependencies:
+
+```bash
+npm install
